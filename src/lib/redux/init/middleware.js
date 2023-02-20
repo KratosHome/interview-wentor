@@ -6,7 +6,8 @@ export const logger = createLogger({
     duration:  true,
     collapsed: true,
     colors:    {
-        title: (action) => action.error ? 'firebrick' : 'deepskyblue',
+        // eslint-disable-next-line no-confusing-arrow
+        title:     (action) => action.error ? 'firebrick' : 'deepskyblue',
         prevState: () => '#1C5FAF',
         action:    () => '#149945',
         nextState: () => '#A47104',
