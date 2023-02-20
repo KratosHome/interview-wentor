@@ -2,7 +2,7 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 // Hooks
 import { useUpdateProfile } from '../../hooks/useUpdateProfile';
@@ -57,7 +57,7 @@ export const Profile = () => {
                 Обновить профиль
                     </button>
                 </div>
-                <a href = '/rtx-homeworks/profile/new-password'>Cменить пароль →</a>
+                <Link to = '/new-password'>Сменить пароль →</Link>
             </div>
         </form>
     );

@@ -1,3 +1,3 @@
-export const getToken = (state) => state.auth.getToken;
+export const getToken = (state) => state.auth.token;
 
-export const getPasswordState = (state) => state.password;
+export const getPasswordState = (state) => state.auth;

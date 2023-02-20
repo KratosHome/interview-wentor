@@ -143,6 +143,19 @@ export const api = {
                 body: avatarFormData,
             });
         },
+        async updatePassword(passwordData) {
+            const { data } = await axios.post(
+                `${AUTH_URL}/reset-password`,
+                passwordData,
+                {
+                    headers: {
+                        Authorization: `Bearer ${api.token}`,
+                    },
+                },
+            );
+
+            return data;
+        },
     },
     users: {
         fetch() {
